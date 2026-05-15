@@ -1,4 +1,4 @@
-const API_BASE_URL = '/server';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || '/server';
 
 // API utility functions
 class ApiService {

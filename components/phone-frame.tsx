@@ -31,7 +31,7 @@ export function PhoneFrame({ children }: PhoneFrameProps) {
       left: Math.random() * 100,
       delay: Math.random() * 20,
       duration: Math.random() * 10 + 15,
-      type: i % 2 === 0 ? 'yellow' : 'purple' as const
+      type: (i % 2 === 0 ? 'yellow' : 'purple') as 'yellow' | 'purple'
     }));
     setBubbles(newBubbles);
   }, []);
